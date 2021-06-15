@@ -1,0 +1,213 @@
+* {
+    box-sizing:border-box;
+    /* border:1px solid red; */
+}
+
+ /* clearfix */
+
+ .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    background:rgb(153, 189, 233);
+}
+
+/* jumbotron styles start*/
+
+h1,
+h3{
+   color:lightyellow;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.inspi{
+    color:lightgreen;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size:x-large;
+    text-align:center;
+    transition: all .2s ease-in-out;
+}
+
+.inspi:hover{
+    transform: scale(1.2); 
+}
+
+.creed{
+    color:lightyellow;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size:x-large;
+    text-align:center;
+    transition: all .2s ease-in-out;
+}
+
+.creed:hover { 
+    transform: scale(1.2); 
+}
+
+
+.greeting{
+    text-align:center;
+    transition: all .2s ease-in-out;
+}
+
+.greeting:hover { 
+    transform: scale(1.2); 
+}
+
+.profile-image{
+    transition: all .2s ease-in-out;
+}
+
+.profile-image:hover{
+    transform: scale(1.2); 
+}
+
+/* jumbotron styles end */
+
+
+
+.row{
+    justify-content: center;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+
+.portfolio-buttons{
+    margin-top:auto;
+}
+
+.nav{
+    justify-content: center;
+}
+
+.page-section{
+    padding:2em 0;
+}
+
+.card{
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+/* portfolio end */
+
+
+/* contact start */
+
+.mt-0{
+    transition: all .2s ease-in-out;
+}
+
+.mt-0:hover{
+    transform: scale(1.2); 
+}
+
+.copyright{
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+
+
+.lead{
+    font-family:cursive;
+}
+
+.col-md{
+    text-align:center;
+}
+
+/* contact end */
+
+
+@media (min-width:768px){
+    .mb-4{
+        margin:20px auto;
+    }
+
+    .card{
+        max-width:45%;
+        margin:5px;
+    }
+}
+
+
+
+
+@media (min-width:1024px){
+
+    .display-4{
+        padding:0;
+    }
+
+    .mt-4{
+        width:30%;
+    }
+
+    .layout{
+        display:flex;
+    }
+
+    .inspi{
+        width:100%;
+    
+    }
+
+    .runner{
+        width:40%;
+        padding:0 15px;
+    }
+
+
+    .card{
+        max-width:30%;
+        margin:5px;
+    }
+
+    /* The animation code */
+    @keyframes greeting {
+        0%   {background-color:#FFFFFF; left:0px; top:0px;}
+        25%  {background-color:#FFFFFF; left:200px; top:0px;}
+        50%  {background-color:#FFFFFF; left:200px; top:200px;}
+        75%  {background-color:#FFFFFF; left:0px; top:200px;}
+        100% {background-color:#FFFFFF; left:0px; top:0px;}
+    }
+    
+    /* The element to apply the animation to */
+    .greeting{
+        font-family:cursive;
+        height: 100px;
+        position: relative;
+        background-color: #FFFFFF;
+        animation-name: greeting;
+        animation-duration: 2s;
+    }
+
+    .blog{
+        margin-left:auto;
+    }
+
+}
+
+
+
+/* styles.css line 100 and 4545 turned off */
+
+
+
+
+
+
+
+
